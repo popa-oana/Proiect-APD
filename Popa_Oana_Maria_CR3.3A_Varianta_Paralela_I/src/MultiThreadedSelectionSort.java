@@ -131,7 +131,7 @@ public class MultiThreadedSelectionSort {
         long startTime = System.currentTimeMillis();
 
         for (int i = 0; i < numberOfThreads; i++) {
-            threads[i] = new SelectionSortThread(data, boundaries[i], boundaries[i + 1], i + 1); // Thread IDs start from 1
+            threads[i] = new SelectionSortThread(data, boundaries[i], boundaries[i + 1], i + 1); 
             threads[i].start();
         }
 
